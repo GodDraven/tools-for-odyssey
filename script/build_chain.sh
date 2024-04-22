@@ -2,7 +2,7 @@
 # This script is used to build a simple and private IBFT network using quorum. 
 
 # create the IBFT-Network directory needed for establishing a IBFT network
-IBFTNetwork_PATH="/home/IBFT-Network"
+IBFTNetwork_PATH="/odyssey/IBFT-Network"
 if [ ! -d "$IBFTNetwork_PATH" ]; then
   # Create directory
   mkdir -p "$IBFTNetwork_PATH/Node-0/data/keystore"
@@ -15,8 +15,8 @@ else
   echo "IBFT-Network already exists at $IBFTNetwork_PATH"
 fi
 
-FILE_PATH="/home/IBFT-Network/artifacts"
-NODE_PATH="/home/IBFT-Network"
+FILE_PATH="/odyssey/IBFT-Network/artifacts"
+NODE_PATH="/odyssey/IBFT-Network"
 
 # remove old files if they exist
 if [ -d "$FILE_PATH" ]; then
